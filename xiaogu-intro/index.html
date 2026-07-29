@@ -151,19 +151,6 @@ td{padding:13px 10px;border-bottom:1px solid var(--border-light);color:var(--tex
 </style>
 </head>
 <body>
-<script>
-(function(){
-  if(sessionStorage.getItem('qieman-xiaogu-intro-access')==='ok'){return;}
-  var password=window.prompt('请输入访问密码');
-  if(password==='2026'){
-    sessionStorage.setItem('qieman-xiaogu-intro-access','ok');
-    return;
-  }
-  window.alert('密码错误');
-  document.body.innerHTML='';
-  throw new Error('Access denied');
-})();
-</script>
 <div class="container">
 
 <div class="report-header">
